@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title> First JS Code </title>
+</head>
+
+<body>
+
+    <h1 id="h1text"> This is HTML Heading </h1>
+
+    <p id="ptext"> This is simple text </p>
+
+    <script>
+
+        //1. 1st way - Use testing 
+        document.write("<h3> This is Javscript Heading </h3>")
+
+        //2. 2nd way - alert : use to display very critical message only.
+        //it break / disturbs the browsing.
+        alert("<h3>This is alert message</h3>");
+
+        //3. 3rd Way - console log : use for debugging
+        console.log("<h3> This is comsoles message! </h3>");
+
+        //4. 4th way - actual way to display somethins on web browser as a final output.
+        document.getElementById("ptext").innerHTML = "<b> This is changed by <u>Javascript</u>!</b>";
+        document.getElementById("h1text").innerHTML = "New Title by Javascript";
+
+    </script>
+
+    <script>
+
+        /******************** Variable *********************/
+
+        //1. Decalre variable
+        let message;
+
+        //2. Assign value to variable
+        message = "Hello Word!";
+
+        //3. Display valriable 
+        document.write("Value of Message: " + message);
+
+        message = "New Message";
+        document.write("Value of Message: " + message);
+
+
+        //Addition of 2 nos -
+        let num1 = 10;  // Initialization...
+        let num2 = 20;
+
+        let sum = num1 + num2;
+
+        document.write("<h3> Addition : " + sum + " </h3>");
+
+        /******************** Constants *********************/
+
+        const num = 10;
+        document.write("Constant value: " + num);
+        //num = 20; //Error
+        document.write("Constant value: " + num);
+
+
+    </script>
+
+</body>
+
+</html>
